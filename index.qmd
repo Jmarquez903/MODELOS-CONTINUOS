@@ -1,8 +1,7 @@
 ---
 title: "VARIABLES ALEATORIAS Y DISTRIBUCIONES DE PROBABILIDAD"
 subtitle: "TALLER N° 2"
-
-author: "Julian Barreto <br> Gabriel Molina <br> Erick Jan"
+author: "Julian Marquez <br> Alex Gomez <br> Rubiel Lopez"
 date: today
 lang: es
 
