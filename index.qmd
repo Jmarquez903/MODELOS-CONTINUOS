@@ -170,67 +170,6 @@ library(kableExtra)
 library(dplyr)
 ```
 
-# Tabla de Contenido {.unnumbered}
-
-```{r toc-tabla, echo=FALSE}
-library(kableExtra)
-
-toc_data <- data.frame(
-  `#` = c("1", "2", "", "", "", "", "", "", "",
-           "3", "", "", "", "", "",
-           "4", "", "", "", "",
-           "5", "", "", "", "", "", "", ""),
-  Sección = c(
-    "Activar paquetes",
-    "Distribución Normal",
-    "— Características Clave",
-    "— Parámetros",
-    "— Fórmulas",
-    "— Ejercicio 6.7",
-    "— Ejercicio 6.11",
-    "— Ejercicio 6.13",
-    "— Ejercicio 6.15",
-    "Distribución Ji-Cuadrado",
-    "— Parámetros y Características",
-    "— Función de densidad",
-    "— Familia de Curvas",
-    "— Ejercicio 8.39",
-    "— Ejercicio 8.41",
-    "Distribución T de Student",
-    "— Principales características",
-    "— Familia de Curvas",
-    "— Ejercicio 8.47",
-    "— Ejercicio 8.49",
-    "Teorema del Límite Central",
-    "— Simulación Uniforme",
-    "— Simulación Binomial",
-    "— Simulación Poisson",
-    "— Simulación Hipergeométrica",
-    "— Simulación Exponencial",
-    "— App Interactiva TCL",
-    "Distribución F de Fisher"
-  ),
-  check.names = FALSE
-)
-
-kbl(toc_data,
-    col.names = c("N°", "Contenido"),
-    align = c("c", "l"),
-    caption = "Estructura del documento") |>
-  kable_styling(
-    bootstrap_options = c("striped", "hover", "condensed", "bordered"),
-    full_width = FALSE,
-    position = "left",
-    font_size = 13
-  ) |>
-  row_spec(0, bold = TRUE, background = "#2C3E50", color = "white") |>
-  row_spec(c(1, 2, 10, 16, 21, 28),
-           bold = TRUE, background = "#1A5276", color = "white") |>
-  column_spec(1, width = "3em", bold = TRUE) |>
-  column_spec(2, width = "22em")
-```
-
----
 
 # .Activar paquetes
 
@@ -1378,7 +1317,3 @@ server_tcl <- function(input, output) {
 shinyApp(ui = ui_tcl, server = server_tcl)
 ```
 
-
----
-
-*Documento generado con Quarto + Shiny — Dagoberto Salgado Horta — ESAP 2025*
